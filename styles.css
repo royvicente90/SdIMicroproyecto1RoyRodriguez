@@ -36,6 +36,16 @@
     align-items: center;
     padding: 21px 20px;
 }
+
+h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 39px;
+    line-height: 14px;
+    letter-spacing: normal;
+    color: #ddbe69;
+}
 /*
 .slide-contenedor{
     max-width: 100%;
