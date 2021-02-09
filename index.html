@@ -25,9 +25,65 @@
         </nav>
     </header>
 
-    <main class="page-container">
+    <main class="page-contenedor">
 
         <article class="page">
 
+        <div align="center"><img name="slider"></div>
+
+        <script>
+            window.addEventListener('load', function () {
+                console.log('el contenido se ha cargado');
+
+                var imagenes = [];
+
+                imagenes[0] = 'img/Foto 1.png';
+                imagenes[1] = 'img/Foto 2.png';
+                imagenes[2] = 'img/Foto 3.png';
+                
+                var IndiceImagenes = 0;
+
+                function cambiarImagenes(){
+                    document.slider.src = imagenes[IndiceImagenes];
+                
+                    if(IndiceImagenes < 2) {
+                        IndiceImagenes++
+                    } else {
+                        IndiceImagenes = 0;
+                    }
+
+                }
+
+                setInterval(cambiarImagenes, 10000);
+
+
+            })
+
+        </script>
+
+
+        <h1>BattleShip</h1>
+
+        
+        
+        <!--<div class="slide-contenedor">
+            <div class="slider fade">
+                <img src="img/Foto 1.png" alt="">
+        </div>
+            <div class="slider fade">
+                <img src="img/Foto 2.png" alt="">
+        </div>
+            <div class="slider fade">
+                <img src="img/Foto 3.png" alt="">
+        </div>
+        <div class="direcciones">
+            <a href= "" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href= "" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+            -->
 </body>
 </html>
