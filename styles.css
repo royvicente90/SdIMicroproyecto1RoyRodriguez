@@ -44,7 +44,12 @@ h1 {
     font-size: 39px;
     line-height: 14px;
     letter-spacing: normal;
+    margin-left: 230px;
     color: #ddbe69;
+}
+p {
+    width: 700px;
+    text-align: justify;
 }
 /*
 .slide-contenedor{
