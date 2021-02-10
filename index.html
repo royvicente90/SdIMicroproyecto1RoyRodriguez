@@ -16,10 +16,9 @@
     
         <nav class="menu">
             <div align="center">
-                <a href="#" class="menu-link">Sobre Mí</a>
-                <a href="#" class="menu-link">Experiencia</a>
-                <a href="#" class="menu-link">Inicio</a>
-                <a href="#" class="menu-link">Habilidades</a>
+                <a href="#Experiencia" class="menu-link">Experiencia</a>
+                <a href="#SobreMi" class="menu-link">Sobre Mí</a>
+                <a href="#Habilidades" class="menu-link">Habilidades</a>
                 <a href="#" class="menu-link">Contactame</a>
             </div>
         </nav>
@@ -62,7 +61,7 @@
         </script>
 
         <br><br>
-        <h1>Experiencia</h1>
+        <h1><a name="Experiencia"></a>Experiencia</h1>
         <div align="center"><h2>BattleShip</h2>
 
         <p>Python. 16 de Marzo de 2020.</p>
@@ -90,7 +89,7 @@
 
         <br><br>
 
-        <h1>Sobre Mí</h1>
+        <h1><a name="SobreMi"></a>Sobre Mí</h1>
 
         <br>
 
@@ -98,9 +97,49 @@
 
         <p>Me gustaría graduarme, conseguir un empleo y escapar de Latinoamérica lo mas rápido posible.</p>
         <p>Me gustaría montar mi propio negocio de reparación de computadoras, o conseguir un empleo de lo mismo en una multinacional. Llevarme a mi familia a Europa, casarme e invertir el dinero en activos que me puedan asegurar una vejéz tranquila para mí y mis futuras generaciones.</p>
-        <p>Tanto un hobbie como mi trabajo es arreglar computadoras,otro hobbie que tengo es aprender y practicar Pentesting, trabajo en el CeTIC de la UNIMET como soporte y no me canso de trabajar en ello. Me libera y desestresa. Me gusta investigar sobre tecnologías nuevas y buscar exploits en juegos.</p>
+        <p>Tanto un hobbie como mi trabajo es arreglar computadoras,otro hobbie que tengo es aprender y practicar Pentesting, trabajo en el CeTIC de la UNIMET como soporte y no me canso de trabajar en ello. Me libera y desestresa. Me gusta investigar sobre tecnologías nuevas y buscar exploits en juegos.</p></div>
 
+        <br>
+
+        <h1><a name="Habilidades"></a>Habilidades</h1>
+        <br>
+        <script type="text/javascript">
+        function lee_json() {
+            $.getJSON("/Skills.json", function(datos) {
+                alert("Dato: " + datos["dato"]);
+                $.each(datos["primos"], function(idx,primo) {
+                    alert("Numero primo: " + primo);
+                });
+            });
+        }
+    </script>
+    <div id="chart"></div>
+
+    <br><br>
+
+        <h1><a name="Contactame"></a>Contactame</h1>
+
+        <br>
+
+        <div align="center"><form action="subscriberform.php" method="post">
+            <p>Nombre: <input type="text" name="nombre" size="40"></p>
+            <p> Correo: <input type="email" name="correo" size="40"></p>
+            <p>Mensaje: <textarea rows="4" cols="50" name="mensaje" size="40">Ingresa el mensaje...</textarea></p>
+                <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                </p>
+        </form> </div>
+        <br>
+        <footer class="footer">
         
+        <div align="left">
+        <a href='https://wa.me/584125538939' target="_blank"><img src="img/whatsapp.webp" width="100" height="100"></a>
+        <a href='https://www.instagram.com/royvicente/' target="_blank"><img src="img/ig.png" width="100" height="100"></a>
+        <p>r.roy@correo.unimet.edu.ve</p><a href='https://wa.me/584125538939' target="_blank"><p>+58 412 5538939</p>
+
+        </div>
+        </footer>
         <!--<div class="slide-contenedor">
             <div class="slider fade">
                 <img src="img/Foto 1.png" alt="">
