@@ -103,17 +103,8 @@
 
         <h1><a name="Habilidades"></a>Habilidades</h1>
         <br>
-        <script type="text/javascript">
-        function lee_json() {
-            $.getJSON("/Skills.json", function(datos) {
-                alert("Dato: " + datos["dato"]);
-                $.each(datos["primos"], function(idx,primo) {
-                    alert("Numero primo: " + primo);
-                });
-            });
-        }
-    </script>
-    <div id="chart"></div>
+
+
 
     <br><br>
 
@@ -123,7 +114,7 @@
 
         <div align="center"><form action="subscriberform.php" method="post">
             <p>Nombre: <input type="text" name="nombre" size="40"></p>
-            <p> Correo: <input type="email" name="correo" size="40"></p>
+            <p>Correo: <input type="email" name="correo" size="40"></p>
             <p>Mensaje: <textarea rows="4" cols="50" name="mensaje" size="40">Ingresa el mensaje...</textarea></p>
                 <p>
                 <input type="submit" value="Enviar">
@@ -140,24 +131,6 @@
 
         </div>
         </footer>
-        <!--<div class="slide-contenedor">
-            <div class="slider fade">
-                <img src="img/Foto 1.png" alt="">
-        </div>
-            <div class="slider fade">
-                <img src="img/Foto 2.png" alt="">
-        </div>
-            <div class="slider fade">
-                <img src="img/Foto 3.png" alt="">
-        </div>
-        <div class="direcciones">
-            <a href= "" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
-            <a href= "" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
-        </div>
-        <div class="barras">
-            <span class="barra active" onclick="posicionSlide(1)"></span>
-            <span class="barra" onclick="posicionSlide(2)"></span>
-            <span class="barra" onclick="posicionSlide(3)"></span>
-            -->
+
 </body>
 </html>
